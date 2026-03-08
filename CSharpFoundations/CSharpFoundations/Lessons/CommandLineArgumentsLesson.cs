@@ -13,10 +13,16 @@ namespace CSharpFoundations.Lessons
                 foreach (var arg in args)
                 {
                 Console.WriteLine("First number: " + arg[0]);
-                Console.WriteLine("Second number: 0" + arg[1]);
+                Console.WriteLine("First number: " + arg[0]);
                 }
 
-            //Console.WriteLine(arg[0] + arg[1]);
+            //Nullable Types
+            //int num = null; this is wrong because variables can't hold null
+
+            int? number = null;
+
+            Nullable<int> num2 = null;
+
 
             }
         }

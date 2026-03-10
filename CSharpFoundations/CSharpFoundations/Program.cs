@@ -12,7 +12,9 @@ namespace CSharpFoundations
 
             // VariableScopeLesson.Run();
 
-            NullableTypesLesson.Run();
+            // NullableTypesLesson.Run();
+
+            TheIfStatementLesson.Run();
         }
     }
 }

@@ -26,6 +26,10 @@ namespace CSharpFoundations.Lessons
                Console.WriteLine("The string was " + input);
            }
             */
+
+            //This method accepts any object
+            //void patternMatching(object o) { }
+
             //BMI CALCULATOR
             Console.WriteLine("Enter your height in m: ");
             double height = double.Parse(Console.ReadLine()!);

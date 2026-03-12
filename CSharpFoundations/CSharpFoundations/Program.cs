@@ -14,7 +14,9 @@ namespace CSharpFoundations
 
             // NullableTypesLesson.Run();
 
-            TheIfStatementLesson.Run();
+            //TheIfStatementLesson.Run();
+            
+            TheSwitchStatementLesson.Run();
         }
     }
 }

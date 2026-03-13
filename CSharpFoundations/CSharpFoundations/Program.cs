@@ -18,8 +18,9 @@ namespace CSharpFoundations
 
             //TheSwitchStatementLesson.Run();
 
-            LoopsLesson.Run();
+            //LoopsLesson.Run();
 
+            NumberGuessingGame.Run(); 
 
         }
     }

@@ -10,24 +10,30 @@ namespace CSharpFoundations.Lessons
     {
         internal static void Run()
         {
-            //Number guessing version 1
-            int num = 9; 
 
-            Console.WriteLine("Gues a number");
-            int input = int.Parse(Console.ReadLine());
+            //Number guessing version 2
+            int num = 9;
+            bool gameOver = false;
 
-            if (input == num)
+            while (!gameOver)
             {
-                Console.WriteLine("You win, that is the correct number");
-            }
-            else if(input > num)
-            {
-                Console.WriteLine("Too high");
-            }
-            else if(input < num)
-            {
-                Console.WriteLine("Too low");
-            }
+                Console.WriteLine("Gues a number between 1 and 10");
+                int input = int.Parse(Console.ReadLine());
+                if (input > num)
+                {
+                    Console.WriteLine("Too high");
+
+                }
+                else if (input < num)
+                {
+                    Console.WriteLine("Too low");
+
+                }
+                else {
+                    Console.WriteLine("You win, that is the correct number");
+                    gameOver = true;
+                }
+            } 
         }
     }
 }

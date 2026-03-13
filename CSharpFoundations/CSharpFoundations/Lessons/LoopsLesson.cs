@@ -29,6 +29,14 @@ namespace CSharpFoundations.Lessons
                 Console.WriteLine();
             }
 
+            //While Loop
+            /*bool condition = false;
+            while (!condition)
+            {
+                doSomework();
+                condition = checkCondition();
+            }
+            */
         }
     }
 }

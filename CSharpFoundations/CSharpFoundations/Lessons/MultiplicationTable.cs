@@ -10,6 +10,8 @@ namespace CSharpFoundations.Lessons
     {
         internal static void Run()
         {
+            int score = 0;
+
             for (int i = 1; i <= 12; i++)
             {
                 //Console.Write($"{i} ");
@@ -28,6 +30,8 @@ namespace CSharpFoundations.Lessons
                         if (input == i * j)
                         {
                             Console.WriteLine("Correct answer");
+                            score++;    
+                            Console.WriteLine($"Your score is: {score}");
                             //correctAnswer = true;
                             //break;
                         }
@@ -38,9 +42,9 @@ namespace CSharpFoundations.Lessons
                         }
 
                     }
-                    break;
+                    
                 }
-                break;
+                
             }
         }
     }

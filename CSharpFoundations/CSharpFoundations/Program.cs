@@ -22,7 +22,11 @@ namespace CSharpFoundations
 
             //NumberGuessingGame.Run(); 
 
-            MultiplicationTable.Run();
+            //MultiplicationTable.Run();
+
+            //Class1.Run();
+
+            StringLesson.Run();
 
         }
     }

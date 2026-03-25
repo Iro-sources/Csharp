@@ -15,7 +15,16 @@ namespace CSharpFoundations.Lessons
         int x = 3, y = 4;
         FormattableString s = $"The result of {x} + {y} is {x + y}";
         Console.WriteLine($"format: {s.Format}");    
-    
+
+        //String formats
+        //DateTime day = DateTime.Now;
+        //Console.WriteLine($"{day:D}");
+        //Console.WriteLine($"{day:d}");
+
+        //If you want specific date
+        DateTime day = new(2025, 2, 14);
+        Console.WriteLine($"{day:D}");
+              
             }
 }
 }

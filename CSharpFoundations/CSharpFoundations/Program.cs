@@ -28,7 +28,9 @@ namespace CSharpFoundations
 
             //StringLesson.Run();
 
-            Types.Run();
+            //Types.Run();
+
+            Student.Run();
 
         }
     }

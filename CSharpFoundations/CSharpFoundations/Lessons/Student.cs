@@ -10,9 +10,7 @@ namespace CSharpFoundations.Lessons
 {
     internal class Student
     {
-        internal static void Run()
-        {
-            private readonly string _firstName;
+        private readonly string _firstName;
             private readonly string _lastName;
 
 
@@ -50,6 +48,7 @@ public int Age;
     }*/
 
 //Auto implemented properties
+//Auto-property → “just store this” 📦
 /*public int Age
 {get; set;  } = 4;
 */
@@ -63,7 +62,29 @@ public string Name
 }
 */
 
-//Different access levels can aslo be set with auto implemented properties
-/*publicsf int Age
+//Different access levels can aslo be set with auto-implemented properties
+/*public int Age
     {get, private set}
     */
+
+//Readonly properties
+//To make a property readonly you just need to omit the set accessor
+/*private string _firstName;
+public string FirstName
+{get => _firstName;}
+*/
+
+//Auto-implemented readonly properties 
+/*public string Id
+{get;} = Guid.NewGuid().ToString();
+
+//Auto-implemented readonly properties can also be initialized from the constructor
+public class Book{
+    public Book(string title) =>Title = title;
+{   public string Title{ get;}
+   
+}     
+}
+*/
+
+

@@ -32,7 +32,9 @@ namespace CSharpFoundations
 
             //Student.Run();
 
-            Methods.Run();
+            //Methods.Run();
+
+            ConstructorSamples.Run();
 
         }
     }

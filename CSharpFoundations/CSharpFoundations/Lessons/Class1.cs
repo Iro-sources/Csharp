@@ -13,8 +13,6 @@ namespace CSharpFoundations.Lessons
             bool correctAnswer = false;
             while (!correctAnswer)
             {
-
-
                 for (int i = 1; i < 5; i++)
 
                 {
@@ -32,15 +30,12 @@ namespace CSharpFoundations.Lessons
                         {
                             Console.WriteLine("Wrong answer"); 
                         }
-
                     }
                     Console.WriteLine();
                 }
-
-
             }
-
-
         }
     }
 }
+
+

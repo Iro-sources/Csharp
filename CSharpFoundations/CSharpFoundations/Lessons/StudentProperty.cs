@@ -8,13 +8,13 @@ using System.Threading.Tasks;
 
 namespace CSharpFoundations.Lessons
 {
-    internal class Student
+    internal class StudentProperty
     {
         private readonly string _firstName;
             private readonly string _lastName;
 
 
-            public Student(string firstName, string lastName)
+            public StudentProperty(string firstName, string lastName)
         {
             _firstName = firstName;
             _lastName = lastName;

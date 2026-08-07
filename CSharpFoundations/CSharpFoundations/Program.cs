@@ -34,8 +34,9 @@ namespace CSharpFoundations
 
             //Methods.Run();
 
-            ConstructorSamples.Run();
+            //ConstructorSamples.Run();
 
+            Arrays.Run();
         }
     }
 }

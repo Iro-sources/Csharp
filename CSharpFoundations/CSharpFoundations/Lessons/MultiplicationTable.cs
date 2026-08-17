@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Formats.Asn1.AsnWriter;
 
 namespace CSharpFoundations.Lessons
 {
@@ -10,41 +11,55 @@ namespace CSharpFoundations.Lessons
     {
         internal static void Run()
         {
-            int score = 0;
+            int correctScore = 0;
+            int wrongScore = 0;
 
-            for (int i = 1; i <= 12; i++)
-            {
+            Random random = new Random();
 
-                for (int j = 1; j <= 12; j++)
+            int num1 = random.Next(1, 13);
+            int num2 = random.Next(1, 13);
+
+            Console.WriteLine($"What is {num1} * {num2} OR type 'quit' to stop the program");
+            string userInput = Console.ReadLine();
+            userInput = userInput.ToLower();
+
+            while(userInput != "quit"){
+                if (int.TryParse(userInput, out int number)){
+                }
+                else
                 {
+                    Console.WriteLine("Please use numerics");
+                    Console.WriteLine($"What is {num1} * {num2} OR type 'quit' to stop the program");
+                    userInput = Console.ReadLine();
+                    userInput = userInput.ToLower();
+                    continue;
 
-                    int input = 0;
-                    //bool correctAnswer = false;
+                }
 
-                    while (input != i * j)
-                    {
-                        Console.WriteLine($"What is {i} * {j}");
-                        input = int.Parse(Console.ReadLine()!);
+                if( number ==  num1 * num2)
+                {
+                    correctScore++;
+                    Console.WriteLine("Correct answer");
 
-                        if (input == i * j)
-                        {
-                            Console.WriteLine("Correct answer");
-                            score++;    
-                            Console.WriteLine($"Your score is: {score}");
-                            //correctAnswer = true;
-                            //break;
-                        }
-                        else
-                        {
-                            Console.WriteLine("Wrong answer");
-                            //Console.WriteLine($"What is {i} * {j}");
-                        }
+                }
+                          
+                else{
+                    Console.WriteLine("Wrong answer");
+                    wrongScore++;
+                                
+                }
+                    num1 = random.Next(1, 13);
+                    num2 = random.Next(1, 13);
+                    Console.WriteLine($"What is {num1} * {num2} OR type 'quit' to stop");
+                    userInput = Console.ReadLine();
+                    userInput = userInput.ToLower();
+
+            }
+
+            Console.WriteLine($"Your final score of the quiz is correct: {correctScore} failed: {wrongScore}");
 
                     }
-                    
+
                 }
-                
             }
-        }
-    }
-}
+        

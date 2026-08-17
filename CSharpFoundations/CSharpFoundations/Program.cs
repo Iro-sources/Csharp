@@ -22,7 +22,7 @@ namespace CSharpFoundations
 
             //NumberGuessingGame.Run(); 
 
-            //MultiplicationTable.Run();
+            MultiplicationTable.Run();
 
             //Class1.Run();
 
@@ -36,7 +36,7 @@ namespace CSharpFoundations
 
             //ConstructorSamples.Run();
 
-            Arrays.Run();
+           // Arrays.Run();
         }
     }
 }

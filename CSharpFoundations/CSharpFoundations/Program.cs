@@ -1,4 +1,5 @@
-﻿using CSharpFoundations.Lessons;
+﻿using CSharpFoundations.Games;
+using CSharpFoundations.Lessons;
 
 namespace CSharpFoundations
 {
@@ -22,7 +23,7 @@ namespace CSharpFoundations
 
             //NumberGuessingGame.Run(); 
 
-            MultiplicationTable.Run();
+            //MultiplicationTable.Run();
 
             //Class1.Run();
 
@@ -37,6 +38,8 @@ namespace CSharpFoundations
             //ConstructorSamples.Run();
 
            // Arrays.Run();
+
+            RockPaperScissor.Run();
         }
     }
 }
